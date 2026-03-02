@@ -58,11 +58,6 @@ class CmsPageDependencyProvider extends AbstractBundleDependencyProvider
         return $container;
     }
 
-    /**
-     * @param \Spryker\Yves\Kernel\Container $container
-     *
-     * @return \Spryker\Yves\Kernel\Container
-     */
     protected function addCmsTwigContentRendererPlugin(Container $container): Container
     {
         $container->set(static::CMS_TWIG_CONTENT_RENDERER_PLUGIN, function (Container $container) {
@@ -114,11 +109,6 @@ class CmsPageDependencyProvider extends AbstractBundleDependencyProvider
         return $container;
     }
 
-    /**
-     * @param \Spryker\Yves\Kernel\Container $container
-     *
-     * @return \Spryker\Yves\Kernel\Container
-     */
     protected function addLocaleClient(Container $container): Container
     {
         $container->set(static::CLIENT_LOCALE, function (Container $container) {

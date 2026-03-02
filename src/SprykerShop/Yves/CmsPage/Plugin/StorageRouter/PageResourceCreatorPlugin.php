@@ -16,33 +16,21 @@ use SprykerShop\Yves\StorageRouterExtension\Dependency\Plugin\ResourceCreatorPlu
  */
 class PageResourceCreatorPlugin extends AbstractPlugin implements ResourceCreatorPluginInterface
 {
-    /**
-     * @return string
-     */
     public function getType(): string
     {
         return CmsStorageConstants::CMS_PAGE_RESOURCE_NAME;
     }
 
-    /**
-     * @return string
-     */
     public function getModuleName(): string
     {
         return 'CmsPage';
     }
 
-    /**
-     * @return string
-     */
     public function getControllerName(): string
     {
         return 'Cms';
     }
 
-    /**
-     * @return string
-     */
     public function getActionName(): string
     {
         return 'page';

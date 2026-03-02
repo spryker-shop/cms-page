@@ -49,12 +49,6 @@ class CmsTwigPlugin extends AbstractPlugin implements TwigPluginInterface
         return $this->registerCmsTwigFunction($twig, $container);
     }
 
-    /**
-     * @param \Twig\Environment $twig
-     * @param \Spryker\Service\Container\ContainerInterface $container
-     *
-     * @return \Twig\Environment
-     */
     protected function registerCmsTwigFunction(Environment $twig, ContainerInterface $container): Environment
     {
         $twig->addFunction(
@@ -66,13 +60,6 @@ class CmsTwigPlugin extends AbstractPlugin implements TwigPluginInterface
         return $twig;
     }
 
-    /**
-     * @param string $identifier
-     * @param array $context
-     * @param \Spryker\Service\Container\ContainerInterface $container
-     *
-     * @return string
-     */
     protected function getTranslation(string $identifier, array $context, ContainerInterface $container): string
     {
         $placeholders = $context['_view']['placeholders'];
@@ -94,21 +81,11 @@ class CmsTwigPlugin extends AbstractPlugin implements TwigPluginInterface
         return $translation;
     }
 
-    /**
-     * @param string $translation
-     *
-     * @return bool
-     */
     protected function isGlossaryKey(string $translation): bool
     {
         return strpos($translation, static::CMS_PREFIX_KEY) === 0;
     }
 
-    /**
-     * @param \Spryker\Service\Container\ContainerInterface $container
-     *
-     * @return \Symfony\Contracts\Translation\TranslatorInterface
-     */
     protected function getTranslator(ContainerInterface $container): TranslatorInterface
     {
         return $container->get(static::SERVICE_TRANSLATOR);

@@ -23,33 +23,21 @@ class CmsPageFactory extends AbstractFactory
         return $this->getProvidedDependency(CmsPageDependencyProvider::CMS_TWIG_CONTENT_RENDERER_PLUGIN);
     }
 
-    /**
-     * @return \SprykerShop\Yves\CmsPage\Dependency\Client\CmsPageToCmsClientInterface
-     */
     public function getCmsClient(): CmsPageToCmsClientInterface
     {
         return $this->getProvidedDependency(CmsPageDependencyProvider::CLIENT_CMS);
     }
 
-    /**
-     * @return \SprykerShop\Yves\CmsPage\Dependency\Client\CmsPageToCustomerClientInterface
-     */
     public function getCustomerClient(): CmsPageToCustomerClientInterface
     {
         return $this->getProvidedDependency(CmsPageDependencyProvider::CLIENT_CUSTOMER);
     }
 
-    /**
-     * @return \SprykerShop\Yves\CmsPage\Dependency\Client\CmsPageToCmsStorageClientInterface
-     */
     public function getCmsStorageClient(): CmsPageToCmsStorageClientInterface
     {
         return $this->getProvidedDependency(CmsPageDependencyProvider::CLIENT_CMS_STORAGE);
     }
 
-    /**
-     * @return \SprykerShop\Yves\CmsPage\Dependency\Client\CmsPageToLocaleClientInterface
-     */
     public function getLocaleClient(): CmsPageToLocaleClientInterface
     {
         return $this->getProvidedDependency(CmsPageDependencyProvider::CLIENT_LOCALE);

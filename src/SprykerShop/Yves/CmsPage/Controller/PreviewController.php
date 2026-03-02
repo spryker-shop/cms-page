@@ -99,12 +99,6 @@ class PreviewController extends AbstractController
         return true;
     }
 
-    /**
-     * @param int $idCmsPage
-     * @param array $metaData
-     *
-     * @return array
-     */
     protected function executeIndexAction(int $idCmsPage, array $metaData): array
     {
         return [
