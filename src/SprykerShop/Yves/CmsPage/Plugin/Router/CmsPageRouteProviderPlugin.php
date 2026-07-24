@@ -42,14 +42,10 @@ class CmsPageRouteProviderPlugin extends AbstractRouteProviderPlugin
     protected const PAGE_NUMBER_PATTERN = '[0-9]+';
 
     /**
-     * Specification:
+     * {@inheritDoc}
      * - Adds Routes to the RouteCollection.
      *
      * @api
-     *
-     * @param \Spryker\Yves\Router\Route\RouteCollection $routeCollection
-     *
-     * @return \Spryker\Yves\Router\Route\RouteCollection
      */
     public function addRoutes(RouteCollection $routeCollection): RouteCollection
     {

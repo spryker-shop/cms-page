@@ -19,6 +19,8 @@ use SprykerShop\Yves\ShopRouterExtension\Dependency\Plugin\ResourceCreatorPlugin
 class PageResourceCreatorPlugin extends AbstractPlugin implements ResourceCreatorPluginInterface
 {
     /**
+     * {@inheritDoc}
+     *
      * @return string
      */
     public function getType()
@@ -27,6 +29,8 @@ class PageResourceCreatorPlugin extends AbstractPlugin implements ResourceCreato
     }
 
     /**
+     * {@inheritDoc}
+     *
      * @return string
      */
     public function getModuleName()
@@ -35,6 +39,8 @@ class PageResourceCreatorPlugin extends AbstractPlugin implements ResourceCreato
     }
 
     /**
+     * {@inheritDoc}
+     *
      * @return string
      */
     public function getControllerName()
@@ -43,6 +49,8 @@ class PageResourceCreatorPlugin extends AbstractPlugin implements ResourceCreato
     }
 
     /**
+     * {@inheritDoc}
+     *
      * @return string
      */
     public function getActionName()
@@ -51,6 +59,8 @@ class PageResourceCreatorPlugin extends AbstractPlugin implements ResourceCreato
     }
 
     /**
+     * {@inheritDoc}
+     *
      * @param array<string, mixed> $data
      *
      * @return array
